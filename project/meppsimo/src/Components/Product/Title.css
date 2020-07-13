@@ -1,0 +1,38 @@
+.text-title {
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #442941;
+    
+  }
+
+  .text-title hr {
+    width: 100px;
+    margin: auto;
+    border: .3px solid #cbc2e0;
+    margin-bottom: 10px;
+  }
+
+  .text-category {
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #442941;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+  .text-subtitle {
+      border-bottom: 1px solid #443258;
+      font-size: 26px;
+      font-weight: 600;
+      color: #442941;
+      font-family: 'Noto Sans';
+  }
+
+  @media (min-width: 992px) { 
+    .text-title h5 {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+  }

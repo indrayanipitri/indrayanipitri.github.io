@@ -1,0 +1,652 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*Navbar*/
+.navbar {
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  
+}
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(../img/jumbotron/1.jpg);
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  position: absolute;
+  bottom: 0;
+}
+
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 75px;
+  margin-left: 5px;
+  font-family: Helvetica;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  font-size: 51px;
+}
+
+
+/* about */
+.about {
+  margin: auto 40px;
+  font-family: Helvetica;
+}
+
+
+.about p {
+  font-size: 15px;
+  font-family: Helvetica;
+  text-align: justify;
+  color: rgb(90, 90, 90);
+  font-weight: lighter;
+}
+
+
+.about h1 {
+  font-size: 30px;
+  color: rgb(82, 82, 82);
+  
+
+}
+
+
+.about hr {
+  width: 80px;
+  border-top: 2px solid rgb(181, 195, 209);
+  margin: 0 auto 20px;
+}
+
+.akun hr {
+  width: 130px;
+  border-top: 3px solid rgb(181, 195, 209);
+  margin: 0 auto 10px;
+}
+
+/* parallex */
+.parallax {
+  
+  background: transparent;
+  background-size: cover;
+  min-height: 1000px;
+ 
+}
+
+
+/* card */
+
+
+/* card */
+.container-card {
+  width : 300px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+  
+  
+  
+
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #eee;
+  overflow: hidden;
+  flex: 2;
+  height: 340px;
+  width: 300px;
+  margin-top: 30px;
+  
+  
+
+}
+
+.card img {
+  height: 230px;
+  margin-bottom: 0;
+}
+
+.card .card-body  {
+  text-align: center;
+  font-size: 12px;
+  
+}
+
+.card-body h3 {
+  font-size: 19px;
+  color: rgb(78, 75, 75);
+}
+
+.card-besar {
+  transform: scale(1.1);
+}
+
+/* gallery */
+.gallery {
+  margin: auto 40px;
+  font-family: Helvetica;
+}
+
+.gallery h1 {
+  font-size: 30px;
+  color: rgb(82, 82, 82);
+  
+
+}
+
+
+.gallery hr {
+  width: 80px;
+  border-top: 2px solid rgb(181, 195, 209);
+  margin: 0 auto 20px;
+}
+
+
+.container-gallery {
+  width: 350px;
+  margin: auto;
+  margin-bottom: 0;
+  
+  
+}
+
+.image-gallery {
+  
+ 
+  background-size: cover;
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  grid-template-areas: 
+              'img-1 img-1 img-2'
+              'img-1 img-1 img-3'
+              'img-4 img-6 img-5'
+              'img-9 img-8 img-5'
+              'img-9 img-7 img-7'
+              'img-12 img-7 img-7'
+              'img-10 img-10 img-11'
+              'img-10 img-10 img-13'
+              ;
+}
+
+.image-gallery a {
+  
+  width: 120px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+ 
+}
+
+.image-gallery a:hover {
+  opacity: 0.7;
+  cursor: zoom-in;
+
+}
+
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 240px;
+  min-width: 240px;
+  background-image: url(../img/gallery-/1.png);
+}
+
+.img-2 {
+  grid-area: img-2;
+  background-image: url(../img/gallery-/2.png);
+}
+
+.img-3 {
+  grid-area: img-3;
+  background-image: url("../img/gallery-/3.png");
+}
+
+.img-4 {
+  grid-area: img-4;
+  background-image: url("../img/gallery-/4.png");
+}
+
+.img-5 {
+  grid-area: img-5;
+  min-height: 240px;
+  background-image: url("../img/gallery-/5.jpg");
+}
+
+.img-6 {
+  grid-area: img-6;
+  background-image: url("../img/gallery-/6.png");
+}
+
+.img-7 {
+  grid-area: img-7;
+  min-height: 240px;
+  min-width: 240px;
+  background-image: url("../img/gallery-/7.png");
+}
+
+.img-8 {
+  grid-area: img-8;
+  background-image: url("../img/gallery-/8.png");
+}
+
+.img-9 {
+  grid-area: img-9;
+  min-height: 240px;
+  background-image: url("../img/gallery-/9.jpg");
+}
+
+.img-10 {
+  grid-area: img-10;
+  min-height: 240px;
+  min-width: 240px;
+  background-image: url("../img/gallery-/10.png");
+}
+
+.img-11{
+  grid-area: img-11;
+  background-image: url("../img/gallery-/11.png");
+}
+
+.img-12 {
+  grid-area: img-12;
+  background-image: url("../img/gallery-/12.png");
+}
+
+.img-13 {
+  grid-area: img-13;
+  background-image: url("../img/gallery-/13.png");
+}
+
+/* contact */
+
+.form-val {
+  background-image: url(../img/form/33.jpg);
+  height: 900px;
+  background-size: cover;
+  background-position-y: -50px ;
+  position: relative;
+  
+
+}
+
+.form-val::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,.4));
+  position: absolute;
+  bottom: 0;
+}
+
+.form-val .container-form {
+  position: relative;
+  z-index: 1;
+}
+
+.container-form {
+  margin: auto;
+  color: rgb(202, 202, 202);
+  font-family: Helvetica;
+  font-weight: lighter;
+  margin: auto 40px;
+
+}
+
+.container-form h1 {
+  margin-top: 30px;
+  font-size: 25px;
+  
+}
+
+.container-form .kiri hr {
+  border: .5px solid rgb(172, 172, 172);
+  margin-top: -2px;
+  width: 270px;
+}
+
+.container-form p {
+  margin-top: 25px;
+  font-size: 15px;
+  text-align: justify ;
+  
+}
+
+
+.container-form h3 {
+  margin-top: 40px;
+  font-size: 19px;
+  
+}
+
+.fa-pencil-alt {
+  font-size: 20px;
+  color: white;
+  margin-top: 40px;
+  float: right;
+}
+
+.khususform {
+  margin-top: 40px;
+  box-shadow: -1px 1px 60px 10px black;
+  background: rgba(0, 0, 0, 0.4);
+  
+}
+
+.khususform hr {
+  border: 1px solid rgb(46, 44, 44);
+  margin-top: 3px;
+}
+
+
+.label {
+  font-weight: normal;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  
+}
+
+.form-control {
+  background: transparent;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  margin-top: 10px;
+  height: 35px;
+  color: white;
+  margin-left: 0px;
+  width: 400px;
+
+}
+
+
+
+.btn-info {
+  margin-top: 28px;
+  font-size: 15px;
+  width: 80px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+
+/* footer */
+
+footer {
+  background-color: rgb(247, 252, 255);
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  padding-top: 35px;
+  
+  
+}
+
+footer p {
+  font-size: 15px;
+  color: rgb(99, 91, 91);
+ 
+}
+
+
+
+
+
+
+/*Desktop Version*/
+@media (min-width: 992px) { 
+
+  /* Container */
+.container {
+  width: 1100px;
+}
+
+/* navbar */
+.navbar-brand, .nav-link {
+  color: white !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+.nav-link {
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+
+.nav-link:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid rgb(113, 121, 129);  /*warna diganti*/
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3px;
+  margin-bottom: -5px;
+}
+
+
+/* jumbotron */
+.jumbotron {
+  margin-top: -75px;
+  height: 560px;
+}
+
+.jumbotron .display-4 {
+  margin-top: 60px;
+  font-family: Helvetica;
+  font-size: 75px;
+}
+
+/* about */
+.container-about {
+  width: 1010px;
+  margin: auto;
+  font-family: helvetica;
+}
+
+
+/* parallex */
+.parallax {
+  
+  background: transparent;
+  background-size: cover;
+  min-height: 500px;
+ 
+}
+
+/* card */
+.container-card {
+  width : 1050px;
+  margin: 50px auto;
+  display: flex;
+ 
+  
+
+}
+
+.card {
+  margin: 30px;
+  margin-top: 60px;
+  height: 380px;
+  
+
+}
+
+.card img {
+  height: 260px;
+ 
+}
+
+
+/* gallery */
+.container-gallery {
+  width: 900px;
+  margin:  auto;
+  margin-bottom: 80px;
+  
+}
+
+.image-gallery {
+  width: 900px;
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  grid-template-areas: 
+              'img-1 img-1 img-2 img-3 img-4 img-5'
+              'img-1 img-1 img-6 img-7 img-7 img-5'
+              'img-9 img-10 img-10 img-7 img-7 img-8'
+              'img-9 img-10 img-10 img-11 img-12 img-13'
+              ;
+}
+
+.image-gallery a {
+  
+  width: 150px;
+  height: 150px;
+ 
+}
+
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 300px;
+  min-width: 300px;
+  background-image: url(../img/gallery-/1.png);
+}
+
+
+.img-5 {
+  grid-area: img-5;
+  min-height:  300px;
+  background-image: url("../img/gallery-/5.jpg");
+}
+
+
+.img-7 {
+  grid-area: img-7;
+  min-height: 300px;
+  min-width: 300px;
+  background-image: url("../img/gallery-/7.png");
+}
+
+
+
+.img-9 {
+  grid-area: img-9;
+  min-height:  300px;
+  background-image: url("../img/gallery-/9.jpg");
+}
+
+.img-10 {
+  grid-area: img-10;
+  min-height: 300px;
+  min-width: 292px;
+  background-image: url("../img/gallery-/10.png");
+}
+
+
+
+/* form */
+.form-val {
+  height: 500px;
+
+}
+
+
+.container-form {
+  width: 1020px;
+  margin: auto;
+  
+
+}
+
+.container-form h1 {
+  margin-top: 100px;
+  font-size: 35px;
+}
+
+.container-form .kiri hr {
+  width: 380px;
+}
+
+.container-form p {
+  font-size: 17px;
+  text-align: left;
+  
+}
+
+
+.container-form h3 {
+  font-size: 22px;
+  
+}
+
+.fa-pencil-alt {
+  font-size: 24px;
+  margin-top: 37px;
+}
+
+
+.label {
+  font-size: 15px;
+  
+}
+
+
+.btn-info {
+  margin-top: 30px;
+  font-size: 17px;
+  width: 90px;
+  margin-left: 84px;
+  margin-bottom: 20px;
+}
+
+
+/* footer */
+footer {
+  height: 120px;
+  padding-top: 40px;
+  
+}
+
+footer p {
+  font-size: 20px;
+ 
+}
+
+}

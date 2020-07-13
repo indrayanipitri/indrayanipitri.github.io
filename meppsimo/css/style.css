@@ -1,0 +1,482 @@
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+body {
+   font-family: 'Noto Sans';
+   color: #442941;
+  
+}
+
+/* HOME */
+
+/* gabungan */
+.hot-product h4, .gallery h4, .designer h4, .similar-product h4, .judul-men h4 {
+  font-family: 'Noto Sans';
+  font-weight: 600;
+}
+
+.hot-product .figure h5, .designer .figure h5 {
+  color: black;
+  font-family: 'Noto Sans';
+  
+}
+
+
+/* Navbar */
+.navbar {
+  font-family: 'Crete Round';
+  background-color: #322F3D;
+  height: 55px;
+  border-bottom: 1px solid #333;
+
+}
+
+.navbar .dropdown {
+  font-family: 'Noto Sans';
+}
+  
+.navbar .dropdown input  {
+    font-family: 'Noto Sans';
+}
+
+
+
+/* Navlink*/
+.navbar-nav, .category {
+  color: white !important;
+}
+
+
+/* Carousel */
+.carousel {
+  height: 450px;
+  background-image: url(../img/carousel/bg.png);
+  color: #2A2A2A;
+}
+
+
+.carousel h1 {
+  font-family: 'Crete Round';
+  font-weight: 600;
+}
+
+
+/* Hot-Product */
+.hot-product .figure p {
+  color: #707070;
+  font-family: 'Sanchez';
+  font-size: 17px;
+}
+
+
+/* Gallery */
+.gallery .card a {
+  transition: opacity 0.3s;
+}
+
+.gallery .card:hover a {
+  opacity: 0.6;
+}
+
+.gallery-container {
+  background-color: #FFF3F7;
+  padding: 30px;
+  
+}
+
+/* Designer */
+
+/* Footer */
+footer {
+  background-color: #F8F1F8;
+}
+
+footer p, .navlink {
+  color: #322F3D;
+}
+
+
+/* ALL FOR FIGURE CLASS*/
+.figure-img {
+  position: relative;
+}
+
+.figure-img span {
+    display: block;
+    width: 541px;
+    height: 216px;
+    background-color: rgba(200,200,200, 0.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height : 216px;
+    color: #333;
+    text-shadow: 1px 1px 2px #ddd;
+    opacity: 0;
+    transition : .3s;
+    font-size: 30px;
+    font-family: 'Crete Round';
+ 
+}
+
+.figure-img a:hover span {
+  opacity: 1;
+}
+
+
+/* CATEGORY MEN WOMAN */
+
+/* breadcrumbs */
+.breadcrumb {
+  font-family: 'Crete Round';
+  color: #1C1C1C;
+  
+}
+
+
+/* judul category */
+.judul-men h3 {
+  border-bottom: 1px solid #443258;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+
+.judul-men h2 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+/* tops */
+
+/* outers */
+
+/* bottoms */
+
+
+/* SINGEL PRODUCT */
+
+
+
+
+.thumbnail-container {
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 8px;
+  margin: auto;
+  transform: translateY(-50px);
+}
+
+.thumbnail-container a:hover {
+  text-decoration: none;
+  
+}
+
+.ket-product {
+  border-bottom: 1px solid #C5A8D1 ;
+  width: 450px;
+}
+
+.btn-product .btn {
+  margin: 10px 0;
+ 
+}
+
+
+.designed-by {
+  margin: 20px 0;
+}
+
+.designed-by h5 {
+  font-size: 14px;
+  color: #817487;
+  margin-bottom: 20px;
+}
+
+.designed-by h4 {
+  font-size: 15px;
+  transform: translateX(-20px);
+  font-weight: 600;
+  margin-top: 7px;
+}
+
+.designed-by p{
+  font-size: 12px;
+  color: #817487 ;
+  transform: translateX(-20px);
+ 
+}
+
+.description-review {
+  margin-left: 20px;
+ 
+}
+
+
+
+.product-description {
+  border: 1px solid #dee2e6;
+  border-top: 0;
+  padding: 15px;
+  
+  
+}
+
+.product-description p {
+  font-size: 14px;
+  color: #707070;
+}
+
+.product-review {
+  border: 1px solid #dee2e6;
+  border-top: 0;
+  padding: 15px;
+  height: 300px;
+  overflow: scroll;
+}
+
+.product-review h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.product-review p {
+  font-size: 14px;
+}
+
+.similar-product h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.container-background {
+  width: 570px;
+  height: 590px;
+  background-color: #FFF3FF;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.form-check-input {
+  margin-top: 28px;
+}
+
+.cart {
+  padding: 10px;
+ }
+ 
+.cart h5 {
+  font-size: 18px;
+  color: #423B4A;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.cart p {
+  font-size: 14px;
+}
+
+.total  {
+  border-top: 1px solid #D0CDD2;
+  margin-top: 30px;
+  
+}
+
+.total h2 {
+ color: #3B393D;
+ font-size: 18px;
+ margin-top: 15px;
+ font-weight: 600;
+}
+
+.total a {
+  font-size: 15px;
+  color: white;
+  margin-top: 15px;
+  
+}
+
+.container-background1 {
+  width: 700px;
+  height: 400px;
+  background-color: #FFF3FF;
+  margin: auto;
+  margin-bottom: 80px;
+  
+}
+
+.opsi h2{
+  font-size: 18px;
+  margin-top: 140px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.opsi1 a {
+  font-size: 15px;
+  
+}
+
+.opsi1 {
+  margin-left: 260px;
+  margin-top:15px;
+}
+
+.opsi1  span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-body input {
+  font-size: 12px;
+}
+
+.modal-body label {
+  font-size: 14px;
+}
+
+.modal-body p {
+  font-size: 11px;
+}
+
+.modal-body .login-btn {
+  font-size: 13px;
+  color: white;
+}
+
+.container-background2 {
+  width: 560px;
+  height: 470px;
+  background-color: #FFF3FF;
+  margin: auto;
+  margin-bottom: 80px;
+  
+}
+
+.container-background2 label {
+  font-size: 15px;
+}
+
+.container-background2 input {
+  font-size: 12px;
+}
+
+.container-background2 select {
+  font-size: 12px;
+}
+
+.address-form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.address-form a {
+  font-size: 13px;
+  color: white;
+  margin-top: 10px;
+}
+
+.konfirmasi-card {
+  width: 400px;
+  background-color: #F6F6F6;
+}
+
+.konfirmasi-card h2, h3 {
+  font-size: 15px;
+  margin-top: 10px;
+  color:#F6F6F6;
+  font-weight: 600;
+}
+
+.konfirmasi-card h5{
+  font-weight: 600;
+}
+
+.konfirmasi-card h4, label, option {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #3A3838;
+ 
+}
+
+.btn-checkout {
+  color: white;
+  font-size: 15px;
+  background-color: #4b2f63;
+}
+
+.modal-checkout h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.container-backgroundlogin  {
+  width: 400px;
+  height: auto;
+  background-color: #FFF3FF;
+  margin: auto;
+  margin-bottom: 80px;
+  
+}
+
+.container-backgroundlogin form, .container-backgroundsignup form{
+ font-size: 12px;
+}
+
+.container-backgroundlogin label, .container-backgroundsignup label{
+  font-size: 14px;
+}
+
+.container-backgroundlogin input,
+.container-backgroundsignup input,
+.container-backgroundsignup select {
+  font-size: 13px;
+}
+
+.container-backgroundlogin .login-btn, .container-backgroundsignup .login-btn {
+  font-size: 15px;
+  color: white;
+}
+
+.container-backgroundsignup {
+  width: 600px;
+  height: auto;
+  background-color: #FFF3FF;
+  margin: auto;
+  margin-bottom: 80px;
+  
+}
+
+
+
+.form-login button {
+  font-size: 13px;
+}
+
+.form-login, .form-check label {
+ font-size: 12px;
+}
+
+
+
+/* Navbar */
+
+
+/* Navlink*/
+
+/* Carousel */
+
+/* Hot-Product */
+
+/* Gallery */
+
+/* Designer */
+
+/* Footer */
