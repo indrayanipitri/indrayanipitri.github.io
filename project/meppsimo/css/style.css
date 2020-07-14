@@ -12,7 +12,7 @@ body {
 /* HOME */
 
 /* gabungan */
-.hot-product h4, .gallery h4, .designer h4, .similar-product h4, .judul-men h4 {
+.hot-product h4, .gallery h4, .designer h4, .similar-product h4, .judul-category h4 {
   font-family: 'Noto Sans';
   font-weight: 600;
 }
@@ -137,14 +137,18 @@ footer p, .navlink {
 
 
 /* judul category */
-.judul-men h3 {
-  border-bottom: 1px solid #443258;
-  font-size: 26px;
-  font-weight: 600;
+.judul-category h3 {
+  font-size: 20px;
+  color: #442941;
+ 
 }
 
+.judul-category hr {
+  border-bottom: 1px solid #443258;
+  margin-top: -2px;
+}
 
-.judul-men h2 {
+.judul-category h2 {
   font-size: 20px;
   margin-top: 25px;
 }
