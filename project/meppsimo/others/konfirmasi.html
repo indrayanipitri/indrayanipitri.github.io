@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="../css/all.css">
+
+    <!--Font Google-->
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Noto+Sans:400,700|Sanchez&display=swap" rel="stylesheet">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+   <title>meppsimo</title>
+  </head>
+  <body>
+    
+    <!--Navbar-->
+    <nav class="navbar  navbar-dark fixed-top navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <a class="navbar-brand mx-auto" href="../index.html">
+          <img src="../img/icon/logo.png" alt="meppsimo">
+        </a>
+  
+        <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+          <ul class="navbar-nav kategori">
+            <li class="nav-item  ">
+              <a class="nav-link category  " href="../category/category-men.html">Pria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  category category-women " href="../category/category-women.html">Wanita </a>
+            </li>
+          </ul>
+        </div>
+        
+        <a href="cart.html" class="nav-link text-white cart"><i class="fas fa-shopping-cart"></i> <span class="cart-hide">Cart </span>(<span class="cart-count">5</span>)</a>
+            
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link text-white akun" role="button" data-toggle="dropdown" id="dropdownMenuLink"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>
+              </a>
+            
+              <div class="dropdown-menu" style="font-size: 15px;" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="login.html">Masuk</a>
+                  <a class="dropdown-item" href="signup.html">Daftar</a>
+                  
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- akhir navbar -->
+
+<div class="container mt-5 pt-5">
+
+
+<div class="card konfirmasi-card m-auto">
+    <div class="card-body">
+      <h5 class="card-title text-center mb-4">Konfirmasi Pesanan</h5>
+      <div class="row ml-2 mr-2 mb-1">
+        <div class="col">
+            <h4 class="mb-0" style="font-weight: 600;"> Total Pesanan </h4>
+            <small class="text-muted"> 4 Items </small>
+        </div>
+        <div class="col d-flex justify-content-end">
+         <h4 class="m-0 align-self-center" style="font-weight: 600;">Rp. 2.000.000</h4>
+        </div>
+      </div>
+      <div class="row ml-2 mr-2 mb-1">
+        <div class="col">
+            <h4 class="mb-0"> Courier </h4>
+            <small class="text-muted"> JNT Express</small>
+        </div>
+        <div class="col d-flex justify-content-end">
+         <h4 class="m-0 align-self-center">Rp. 25.000</h4>
+        </div>
+     </div>
+     <div class="row ml-2 mr-2 mb-1">
+        <div class="col">
+            <h4 class="mb-0"> Diskon </h4>
+            <small class="text-muted"> 10% OFF</small>
+        </div>
+        <div class="col d-flex justify-content-end">
+         <h4 class="m-0 align-self-center" style="color: red;">Rp -20.000</h4>
+        </div>
+     </div>
+     <div class="row ml-2 mr-2">
+        <div class="col">
+            <div class="form-group">
+                <label for="inputState">Pembayaran Via</label>
+                <select id="inputState" class="form-control">
+                  <option selected>BCA</option>
+                  <option>CIMB Niaga</option>
+                  <option>BNI</option>
+                  <option>Indomart</option>
+                </select>
+              </div>
+        </div>
+     </div>
+
+     <hr>
+
+     <div class="row ml-2 mr-2 mb-1">
+         <div class="col">
+            <h2 class="mb-0" style="color: #161616; font-size: 17px;"> Total Harga </h2>
+         </div>
+         <div class="col d-flex justify-content-end">
+            <h2 class="m-0 align-self-center" style="color: #161616; font-size: 18px;">Rp. 1.995.000</h2>
+           </div>
+      </div>
+  </div>
+  
+</div>
+ 
+    <div class="row  mt-4">
+      <div class="col text-center">
+        <a href="" class="btn btn-checkout" type="button" data-toggle="modal" data-target="#checkout-modal"> Checkout </a>
+      </div>
+    </div>
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="checkout-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center modal-checkout">
+        <img class="mt-3" src="../img/success.png" alt="">
+        <h3>Checkout Berhasil</h3>
+        <p>Anda akan mendapatkan barang anda <br> dalam beberapa hari</p>
+          
+        <a href="../index.html" type="button" class="btn mb-3" style="background-color: #EAEAEF; color: #ADADAD;">Home</a>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<footer class="border-top p-3">
+  <div class="container">
+    <div class="row justify-content-between mt-3 mb-3">
+      <div class="col-lg-6 col-md-5 col-8">
+        <a href="" class="mr-3"><img src="../img/icon/fb.png" alt=""></a>
+        <a href="" class="mr-3"><img src="../img/icon/tw.png" alt=""></a>
+        <a href=""><img src="../img/icon/ig.png" alt=""></a>
+        <p>All Rights Reserved by indrayanipitri Copyright 2020.</p>
+      </div>
+      <div class="col-lg-6 col-md-7 col-4 contact"> 
+        <nav class="nav justify-content-end text-uppercase">
+          <a href="#" class="nav-link">Contact</a>
+          <a href="#" class="nav-link">Developer</a>
+          <a href="#" class="nav-link">Jobs</a>
+          <a href="#" class="nav-link">Policy</a>
+        </nav>
+      </div>
+    </div>
+</footer>
+
+  <!--Akhir Footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.4.1.min.js" ></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/all.js"></script>
+
+  </body>
+</html>
