@@ -23,46 +23,50 @@
   </head>
 <body>
 
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <!--navbar-->
+  <nav class="navbar  navbar-dark fixed-top navbar-expand-lg">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" 
       data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
-            <a class="nav-link category active " href="category-men.html">Men</a>
+
+      <a class="navbar-brand mx-auto" href="../index.html">
+        <img src="../img/icon/logo.png" alt="meppsimo">
+      </a>
+
+      <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+        <ul class="navbar-nav kategori">
+          <li class="nav-item  ">
+            <a class="nav-link category  " href="category-men.html">Pria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ml-5 category" href="category-women.html">Women </a>
+            <a class="nav-link  category category-women " href="#">Wanita </a>
           </li>
         </ul>
-        <a class="navbar-brand mx-auto" href="../index.html">
-          <img src="../img/icon/logo.png" alt="meppsimo">
-        </a>
-        <ul class="navbar-nav mr-4">
-          <li class="nav-item ">
-            <a href="" class="nav-link text-white mr-3"><i class="fas fa-shopping-cart"></i> Cart (<span>5</span>)</a>
-          </li>
-          
+      </div> 
+      
+      <a href="../others/cart.html" class="nav-link text-white cart"><i class="fas fa-shopping-cart"></i> <span class="cart-hide">Cart </span>(<span class="cart-count">5</span>)</a>
+         
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul>
           <li class="nav-item dropdown">
-            <a href="" class="nav-link text-white" role="button" data-toggle="dropdown" id="dropdownMenuLink"
-            aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i> </a>
+            <a href="" class="nav-link text-white akun" role="button" data-toggle="dropdown" id="dropdownMenuLink"
+              aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>
+            </a>
           
             <div class="dropdown-menu" style="font-size: 15px;" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="../lainnya/login.html">Masuk</a>
-                <a class="dropdown-item" href="../lainnya/signup.html">Daftar</a>
+                <a class="dropdown-item" href="../others/login.html">Masuk</a>
+                <a class="dropdown-item" href="../others/signup.html">Daftar</a>
                 
             </div>
-            
           </li>
-       </ul>
+        </ul>
       </div>
     </div>
   </nav>
-  <!-- akhir navbar -->
+
+<!-- akhir navbar -->
 
   <!-- breadcrumbs-->
   <div class="container mt-5">
@@ -75,14 +79,14 @@
   </div>
   <!-- Akhir Breadcrumbs-->
 
-
+<section>
   <div class="container judul-category">
 
     <!--judul-->
-    <div class="row text-center text-uppercase p-3">
+    <div class="row text-center  text-uppercase men-women">
       <div class="col">
-        <h4 class="mb-0"> Women's </h4>
-        <img src="../img/line 8.png" alt="">
+        <h4 class="mb-4 "> WANITA </h4>
+        
       </div>
     </div>
     <!--akhir Judul-->
@@ -96,49 +100,53 @@
         </div>
       </div>
 
-      <div class="row mt-2">
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="../wanita/atasan/kemeja.html">
-                <img src="../img/women/1.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Kemeja </span>
-              </a>
-            </div>
-          </figure> 
-        </div>
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/2.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> T-shirt </span>
-              </a>
-            </div>
-          </figure> 
+      <div class="figure-category  ">
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <figure class="figure mx-auto">
+              <div class="figure-img">
+                <a href="../wanita/atasan/kemeja.html">
+                  <img src="../img/women/1.jpg" class=" figure-img img-fluid rounded" alt="...">
+                  <span> Kemeja </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/atasan/tshirt.html">
+                  <img src="../img/women/2.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> T-shirt </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
         </div>
       </div>
 
-      <div class="row mt-0">
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/3.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Baju Tanpa Lengan </span>
-              </a>
-            </div>
-          </figure> 
-        </div>
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/4.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Blouse </span>
-              </a>
-            </div>
-          </figure> 
+      <div class="figure-category ">
+        <div class="row mt-0">
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/atasan/baju-tanpa-lengan.html">
+                  <img src="../img/women/3.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Baju Tanpa Lengan </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/atasan/blouse.html">
+                  <img src="../img/women/4.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Blouse </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
         </div>
       </div>
     </section>
@@ -147,55 +155,60 @@
 
     <!--Outers-->
     <section id="outers">
-      <div class="row mt-5">
+      <div class="row mt-3">
         <div class="col">
             <h3 class="mb-2"> Luaran </h3>
             <hr>
         </div>
       </div>
 
-      <div class="row mt-2">
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/5.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Cardigans </span>
-              </a>
-            </div>
-          </figure> 
-        </div>
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/6.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Blazer </span>
-              </a>
-            </div>
-          </figure> 
+      <div class="figure-category ">
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/luaran/cardigans.html">
+                  <img src="../img/women/5.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Cardigans </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/luaran/blazer.html">
+                  <img src="../img/women/6.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Blazer </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
         </div>
       </div>
-      <div class="row mt-0">
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/7.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Jaket </span>
-              </a>
-            </div>
-          </figure> 
-        </div>
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/8.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Hoodies </span>
-              </a>
-            </div>
-          </figure> 
+
+      <div class="figure-category ">
+        <div class="row mt-0">
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/luaran/jaket.html">
+                  <img src="../img/women/7.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Jaket </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/luaran/hoodie.html">
+                  <img src="../img/women/8.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Hoodies </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
         </div>
       </div>
     </section>
@@ -203,55 +216,60 @@
 
      <!-- bottoms -->
     <section id="bottoms">
-      <div class="row mt-4">
+      <div class="row mt-3">
         <div class="col">
           <h3 class="mb-2"> Bawahan </h3>
           <hr>
         </div>
       </div>
 
-      <div class="row mt-2">
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/9.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Celana Panjang </span>
-              </a>
-            </div>
-          </figure> 
-        </div>
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/10.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Jeans </span>
-              </a>
-            </div>
-          </figure> 
+      <div class="figure-category ">
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/bawahan/celana-panjang.html">
+                  <img src="../img/women/9.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Celana Panjang </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="#">
+                  <img src="../img/women/10.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Jeans </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
         </div>
       </div>
-      <div class="row mt-0">
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/11.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Celana Pendek </span>
-              </a>
-            </div>
-          </figure> 
-        </div>
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/12.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Rok </span>
-              </a>
-            </div>
-          </figure> 
+
+      <div class="figure-category ">
+        <div class="row mt-0">
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/bawahan/celana-pendek.html">
+                  <img src="../img/women/11.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Celana Pendek </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/bawahan/rok.html">
+                  <img src="../img/women/12.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Rok </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
         </div>
       </div>
     </section>
@@ -259,33 +277,35 @@
 
     <!-- Dresses -->
     <section id="dresses">
-      <div class="row mt-4">
+      <div class="row mt-3">
         <div class="col">
           <h3 class="mb-2"> Dress</h3>
           <hr>
         </div>
       </div>
 
-      <div class="row mt-2">
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-            <a href="#">
-              <img src="../img/women/13.jpg" class="figure-img img-fluid rounded" alt="...">
-              <span> Dress Panjang</span>
-              </a>
-            </div>
-          </figure> 
-        </div>
-        <div class="col-6">
-          <figure class="figure">
-            <div class="figure-img">
-              <a href="#">
-                <img src="../img/women/14.jpg" class="figure-img img-fluid rounded" alt="...">
-                <span> Dress Pendek </span>
-              </a>
-            </div>
-          </figure> 
+      <div class="figure-category ">
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+              <a href="../wanita/dress/dress-panjang.html">
+                <img src="../img/women/13.jpg" class="figure-img img-fluid rounded" alt="...">
+                <span> Dress Panjang</span>
+                </a>
+              </div>
+            </figure> 
+          </div>
+          <div class="col-md-6">
+            <figure class="figure">
+              <div class="figure-img">
+                <a href="../wanita/dress/dress-pendek.html">
+                  <img src="../img/women/14.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <span> Dress Pendek </span>
+                </a>
+              </div>
+            </figure> 
+          </div>
         </div>
       </div>
     </section>
@@ -293,27 +313,29 @@
 
     <!-- Hijab -->
     <section id="hijab">
-      <div class="row mt-4">
+      <div class="row mt-3">
         <div class="col">
           <h3 class="mb-2"> Hijab</h3>
+          <hr>
         </div>
       </div>
 
+      <div class="figure-category ">
       <div class="row mt-2">
-        <div class="col-6">
+        <div class="col-md-6">
           <figure class="figure">
             <div class="figure-img">
-            <a href="#">
+            <a href="../wanita/hijab/segi-empat.html">
               <img src="../img/women/15.jpg" class="figure-img img-fluid rounded" alt="...">
               <span> Segi Empat </span>
               </a>
             </div>
           </figure> 
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <figure class="figure">
             <div class="figure-img">
-              <a href="#">
+              <a href="../wanita/hijab/pashmina.html">
                 <img src="../img/women/16.jpg" class="figure-img img-fluid rounded" alt="...">
                 <span> Pashmina </span>
               </a>
@@ -321,22 +343,25 @@
           </figure> 
         </div>
       </div>
+    </div>
     </section>
     <!--Akhir Dresses-->
    
   </div>
+</section>
   <!--akhir judul-->
 
   <!--Footer-->
-  <footer class="border-top p-5">
+  <footer class="border-top p-3">
     <div class="container">
       <div class="row justify-content-between mt-3 mb-3">
-        <div class="col">
+        <div class="col-lg-6 col-md-5 col-8">
           <a href="" class="mr-3"><img src="../img/icon/fb.png" alt=""></a>
           <a href="" class="mr-3"><img src="../img/icon/tw.png" alt=""></a>
           <a href=""><img src="../img/icon/ig.png" alt=""></a>
+          <p>All Rights Reserved by indrayanipitri Copyright 2020.</p>
         </div>
-        <div class="col"> 
+        <div class="col-lg-6 col-md-7 col-4 contact"> 
           <nav class="nav justify-content-end text-uppercase">
             <a href="#" class="nav-link">Contact</a>
             <a href="#" class="nav-link">Developer</a>
@@ -345,12 +370,6 @@
           </nav>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <p>All Rights Reserved by meppsimo Copyright 2020.</p>
-        </div>
-      </div>
-    </div>
   </footer>
   <!--Akhir Footer-->
 

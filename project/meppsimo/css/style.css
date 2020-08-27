@@ -8,15 +8,19 @@ body {
    color: #442941;
   
 }
-
+ 
+/* /////////////////////////////////////////// */
 /* HOME */
 
 /* gabungan */
-.hot-product h4, .gallery h4, .designer h4, .similar-product h4, .judul-category h4 {
+.hot-product h4, .gallery h4, .designer h4,
+ .similar-product h4, .judul-category h4, 
+ .judul-cart h4, .login h4, .signup h4, .opsi h4,
+ .address h4{
   font-family: 'Noto Sans';
   font-weight: 600;
 }
-
+ 
 .hot-product .figure h5, .designer .figure h5 {
   color: black;
   font-family: 'Noto Sans';
@@ -25,12 +29,15 @@ body {
 
 
 /* Navbar */
+
+
+
 .navbar {
   font-family: 'Crete Round';
-  background-color: #322F3D;
-  height: 55px;
-  border-bottom: 1px solid #333;
-
+    background-color: #322F3D;
+    height: auto;
+    border-bottom: 1px solid #333;
+  
 }
 
 .navbar .dropdown {
@@ -42,33 +49,69 @@ body {
 }
 
 
-
 /* Navlink*/
 .navbar-nav, .category {
   color: white !important;
 }
 
+.cart-hide {
+  display: none;
+}
+
+
+.cart-count {
+  color: #f8e960;
+  font-size: 18px;
+}
+
+
+
 
 /* Carousel */
 .carousel {
-  height: 450px;
+  height: 200px;
   background-image: url(../img/carousel/bg.png);
+  background-size: cover;
   color: #2A2A2A;
+  
 }
-
 
 .carousel h1 {
-  font-family: 'Crete Round';
-  font-weight: 600;
+  margin-top: 15px;
 }
 
+.carousel h2 {
+  margin-left: 80px;
+}
+
+
+.carousel h1, h2 {
+  font-family: 'Crete Round';
+  font-size: 18px;
+  font-weight: 500px;
+  margin-left: 40px;
+}
+
+.satu img {
+  height: 45px;
+  width: 140px;
+  margin-left: 50px;
+}
+
+.dua img {
+  height: 120px;
+  margin-left: -20px;
+ 
+}
 
 /* Hot-Product */
 .hot-product .figure p {
   color: #707070;
   font-family: 'Sanchez';
-  font-size: 17px;
+  font-size: 15px;
 }
+
+
 
 
 /* Gallery */
@@ -84,7 +127,10 @@ body {
   background-color: #FFF3F7;
   padding: 30px;
   
+  
 }
+
+
 
 /* Designer */
 
@@ -97,27 +143,46 @@ footer p, .navlink {
   color: #322F3D;
 }
 
+footer img {
+  height: 30px;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 13px;
+  margin-left: -3px;
+}
+
+.contact {
+  font-size: 14px;
+}
+
+
+/* /////////////////////////////////////////// */
 
 /* ALL FOR FIGURE CLASS*/
+
+
 .figure-img {
   position: relative;
 }
 
 .figure-img span {
     display: block;
-    width: 541px;
-    height: 216px;
+    width: 310px;
+    height: 125px;
     background-color: rgba(200,200,200, 0.5);
     position: absolute;
     top: 0;
     text-align: center;
-    line-height : 216px;
+    line-height : 126px;
     color: #333;
     text-shadow: 1px 1px 2px #ddd;
     opacity: 0;
     transition : .3s;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Crete Round';
+    margin-left: 20px;
  
 }
 
@@ -125,27 +190,56 @@ footer p, .navlink {
   opacity: 1;
 }
 
+/* /////////////////////////////////////////// */
 
-/* CATEGORY MEN WOMAN */
+
 
 /* breadcrumbs */
 .breadcrumb {
+  margin-top: 69px;
   font-family: 'Crete Round';
   color: #1C1C1C;
   
 }
 
+/* /////////////////////////////////////////// */
+
+/* CATEGORY MEN WOMAN */
 
 /* judul category */
-.judul-category h3 {
+
+/* .wrap .product-hidden {
+  display: none;
+}  */
+
+
+.men-women {
+  margin-bottom: -15px !important;
+}
+
+.wrap {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.judul-category h4 {
   font-size: 20px;
+}
+
+
+.judul-category h3 {
+  
+  font-size: 16px;
   color: #442941;
+  margin-left: 15px;
  
 }
 
 .judul-category hr {
   border-bottom: 1px solid #443258;
   margin-top: -2px;
+  margin-left: 15px;
+  margin-right: 8px;
 }
 
 .judul-category h2 {
@@ -153,17 +247,42 @@ footer p, .navlink {
   margin-top: 25px;
 }
 
-/* tops */
+.figure-category img {
+  width: 310px;
+  margin-left: 20px;
+  
+}
 
-/* outers */
+.figure-caption h5 {
+  
+  font-size: 18px;
+  color: #333;
+}
+.figure-caption p {
+  font-size: 16px;
+  color: #333;
+}
 
-/* bottoms */
+/* /////////////////////////////////////////// */
 
 
 /* SINGEL PRODUCT */
 
+.product {
+  width: 320px;
+  height: 380px;
+  margin-bottom: 20px;
+  
+}
 
+.detail-product {
+  margin-top: -35px;
+}
 
+.detail-product h3 {
+ color: rgb(46, 45, 45);
+ font-size: 20px;
+}
 
 .thumbnail-container {
   background-color: white;
@@ -179,47 +298,64 @@ footer p, .navlink {
   
 }
 
-.ket-product {
-  border-bottom: 1px solid #C5A8D1 ;
-  width: 450px;
+.ket-product hr {
+  border: 1px solid #dbc4e6 ;
+  width: 320px;
 }
+
+.ket-product p {
+  font-size: 12px;
+}
+
 
 .btn-product .btn {
   margin: 10px 0;
  
 }
 
+.label-size {
+  margin-top: 20px;
+}
+
+.form-size {
+  margin-top: 18px;
+}
 
 .designed-by {
   margin: 20px 0;
 }
 
 .designed-by h5 {
-  font-size: 14px;
+  font-size: 16px;
   color: #817487;
   margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.designed-by img {
+  width: 50px;
+  height: 50px;
 }
 
 .designed-by h4 {
   font-size: 15px;
   transform: translateX(-20px);
   font-weight: 600;
-  margin-top: 7px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 .designed-by p{
   font-size: 12px;
   color: #817487 ;
   transform: translateX(-20px);
- 
+  margin-left: 20px;
 }
 
 .description-review {
   margin-left: 20px;
  
 }
-
-
 
 .product-description {
   border: 1px solid #dee2e6;
@@ -246,45 +382,99 @@ footer p, .navlink {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 4px;
+  margin-top: 1px;
 }
 
 .product-review p {
   font-size: 14px;
 }
 
-.similar-product h4 {
-  font-size: 20px;
-  margin-bottom: 20px;
+.product-review img {
+  width: 50px;
+  height: 50px;
+}
+
+.product-review h5, .product-review p{
+  margin-left: 35px;
 }
 
 
 
+.similar-product {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.similar-product h4 {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.similar-product hr {
+  border-bottom: 1px solid #a08db6;
+  width: 125px;
+  margin-top: 5px;
+  margin-bottom: 27px;
+
+}
+
+.similar-product h5 {
+  font-size: 15px;
+}
+
+.similar-product p {
+  font-size: 11px;
+}
+
+/* /////////////////////////////////////////// */
+
+/* INPUT */
+.form-check-input {
+  margin-top: 28px;
+}
+
+/* /////////////////////////////////////////// */
+
+/* CONTAINER BACKGROUND */
 .container-background {
-  width: 570px;
-  height: 590px;
+  width: 350px;
+  height: auto;
   background-color: #FFF3FF;
   margin: auto;
   margin-bottom: 80px;
 }
 
-.form-check-input {
-  margin-top: 28px;
+/* /////////////////////////////////////////// */
+
+/* CART */
+
+.judul-cart h4 {
+  font-size: 20px;
 }
 
-.cart {
-  padding: 10px;
+.cart-p {
+  padding: 5px;
+  margin-left: 2px;
  }
- 
-.cart h5 {
-  font-size: 18px;
+
+
+ .cart-p img {
+   height: 50px;
+   width: 50px;
+ }
+
+.cart-p h5 {
+  font-size: 16px;
   color: #423B4A;
   font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 2px;
+  margin-top: 13px;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
 
-.cart p {
-  font-size: 14px;
+.cart-p p {
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .total  {
@@ -295,30 +485,43 @@ footer p, .navlink {
 
 .total h2 {
  color: #3B393D;
- font-size: 18px;
+ font-size: 15px;
  margin-top: 15px;
  font-weight: 600;
 }
 
-.total a {
+.total h3 {
+  margin-top: 15px;
   font-size: 15px;
+}
+
+.button-cart {
+  margin-left: 185px;
+  margin-top: -10px; 
+}
+
+.total a {
+  font-size: 12px;
   color: white;
   margin-top: 15px;
   
 }
 
-.container-background1 {
-  width: 700px;
-  height: 400px;
+/* /////////////////////////////////////////// */
+
+/* OPSI */
+.container-backgroundopsi {
+  width: 340px;
+  height: 250px;
   background-color: #FFF3FF;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   
 }
 
-.opsi h2{
+.opsi h4{
   font-size: 18px;
-  margin-top: 140px;
+  margin-top: 80px;
   text-align: center;
   font-weight: 600;
 }
@@ -329,7 +532,6 @@ footer p, .navlink {
 }
 
 .opsi1 {
-  margin-left: 260px;
   margin-top:15px;
 }
 
@@ -355,24 +557,83 @@ footer p, .navlink {
   color: white;
 }
 
-.container-background2 {
-  width: 560px;
-  height: 470px;
+/* /////////////////////////////////////////// */
+
+/* Login */
+
+.login h4 {
+  margin-top: 20px;
+}
+
+.form-login button {
+  font-size: 13px;
+}
+
+.form-login, .form-check label {
+ font-size: 12px;
+}
+
+.container-backgroundlogin  {
+  width: 340px;
+  height: auto;
+  background-color: #FFF3FF;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 8px;
+  
+}
+/* /////////////////////////////////////////// */
+
+
+/* SIGNUP */
+
+.signup-btn {
+  color: white;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.signup h4 {
+  margin-top: 20px;
+}
+
+.container-backgroundsignup {
+  width: 340px;
+  height: auto;
+  background-color: #FFF3FF;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  
+}
+
+/* /////////////////////////////////////////// */
+
+
+/* Address */
+
+.address h4 {
+  margin-top : 20px;
+  margin-bottom: 10px;
+}
+
+.container-backgroundaddress {
+  width: 350px;
+  height: auto;
   background-color: #FFF3FF;
   margin: auto;
   margin-bottom: 80px;
   
 }
 
-.container-background2 label {
+.container-backgroundaddress label {
   font-size: 15px;
 }
 
-.container-background2 input {
+.container-backgroundaddress input {
   font-size: 12px;
 }
 
-.container-background2 select {
+.container-backgroundaddress select {
   font-size: 12px;
 }
 
@@ -387,15 +648,19 @@ footer p, .navlink {
   margin-top: 10px;
 }
 
+/* /////////////////////////////////////////// */
+
+/* KONFIRMASI */
 .konfirmasi-card {
-  width: 400px;
+  width: 332px;
   background-color: #F6F6F6;
+ 
 }
 
 .konfirmasi-card h2, h3 {
   font-size: 15px;
   margin-top: 10px;
-  color:#F6F6F6;
+  color:#444141;
   font-weight: 600;
 }
 
@@ -414,6 +679,9 @@ footer p, .navlink {
   color: white;
   font-size: 15px;
   background-color: #4b2f63;
+  /* margin-left: 270px; */
+  margin-bottom: 50px;
+  
 }
 
 .modal-checkout h3 {
@@ -421,66 +689,818 @@ footer p, .navlink {
   margin-top: 20px;
 }
 
-.container-backgroundlogin  {
-  width: 400px;
-  height: auto;
-  background-color: #FFF3FF;
-  margin: auto;
-  margin-bottom: 80px;
-  
-}
+
 
 .container-backgroundlogin form, .container-backgroundsignup form{
- font-size: 12px;
+ font-size: 10px;
 }
 
 .container-backgroundlogin label, .container-backgroundsignup label{
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .container-backgroundlogin input,
 .container-backgroundsignup input,
 .container-backgroundsignup select {
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .container-backgroundlogin .login-btn, .container-backgroundsignup .login-btn {
-  font-size: 15px;
+  font-size: 13px;
   color: white;
+}
+
+/* PAGINATION */
+
+.pagination {
+  margin-bottom: 40px;
+}
+
+
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  /* .navbar {
+    height: 55px;
+  } 
+
+  .nav-link {
+    font-size : 17px;
+   } 
+
+  .navlink-left {
+    width: 200px;
+  } */
+
+   /* NAVLINK*/
+
+  /* .kategori {
+    margin-left: 280px;
+    
+  }
+  .category-women {
+  margin-left : 40px;
+  margin-right: 180px;
+  } */
+
+  /* .cart {
+    margin-right: 30px;
+    
+  } */
+
+  /* .akun {
+    margin-top: 15px;
+  } */
+
+  
+  /* NAVBAR  */
+  .navbar-toggler {
+    margin-left: 17px;
+  }
+
+  /* .navbar-brand {
+    margin-right: 134px !important;
+  } */
+
+  .category {
+    margin-left: 20px;
+  }
+
+  .cart-hide {
+    display: none;
+    
+  }
+
+
+  .cart {
+    margin-right: 5px;
+  }
+
+  .akun {
+    margin-left: 5px;
+  }
+
+
+  /* CAROUSEL */
+  .carousel {
+    height: 350px;
+   
+  }
+
+  .carousel h1, h2 {
+    text-align: center;
+    font-size: 38px;
+   
+    
+  }
+
+  .carousel h2 {
+    margin-left: 50px;
+  }
+
+  .carousel h1 {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  .satu img {
+    margin-left: 78px;
+    height: 90px;
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .dua img {
+    margin-left: 60px;
+    height: 250px;
+    
+  }
+
+/* /////////////////////////////////////////// */
+
+/* BREADCRUMB */
+
+.breadcrumb {
+  margin-top: 70px;
+}
+
+/* CATEGORY */
+  .figure-category img {
+    width: 500px;
+    margin-left: 0;
+ }
+ 
+  .category-title {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .judul-category h4 {
+    font-size: 22px;
+    
+  }
+
+  .judul-category h3 {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+
+  .judul-category hr {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .figure-img span {
+    display: block;
+    width: 330px;
+    height: 132px;
+    line-height : 127px;
+    font-size: 25px;
+    margin-left: 0px;
+    
+  }
+
+/* /////////////////////////////////////////// */
+
+/* Single Product */
+
+.product {
+  width: 285px;
+  height: 380px;
+}
+
+.detail-product {
+  margin-top: -10px;
+}
+
+.detail-product h3 {
+  font-size: 17px;
+}
+
+.price {
+ font-size: 15px;
+}
+
+.label-size {
+  margin-top: 22px;
+}
+
+.form-size {
+  margin-top: 20px;
+  margin-left: -10px;
+}
+
+.btn-product .btn {
+  margin-top: 5px;
+}
+
+.ket-product {
+  margin-top: 5px;
+}
+
+.ket-product p {
+  font-size: 13px;
+}
+
+
+.ket-product hr {
+  width: 340px;
+  margin-top: -5px !important;
+  margin-left: 5px;
+}
+
+.designed-by h5 {
+  margin-left: 5px;
+  margin-top: -5px;
+}
+.designed-by img {
+  margin-top: -10px;
+  width: 50px;
+  height: 50px;
+}
+
+.designed-by h4 {
+  margin-top: -8px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.designed-by p{
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.product-review img {
+  width: 50px;
+  height: 50px;
+}
+
+.product-review h5, .product-review p{
+  margin-left: 25px;
+}
+
+.product-review h5 {
+  margin-top: 5px;
+}
+
+
+.similar-product {
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+.similar-product img {
+  height: 180px;
+  width: 190px;
+}
+
+.similar-product h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.similar-product hr {
+  
+  width: 189px;
+  margin-top: 5px;
+  margin-bottom: 27px;
+
+}
+
+.similar-product h5 {
+  font-size: 20px;
+}
+
+.similar-product p {
+  font-size: 15px;
+}
+
+/* /////////////////////////////////////////// */
+
+/* CONTAINER BACKGROUND */
+.container-background {
+  width: 470px;
+  
+}
+
+/* CART */
+
+.cart-p {
+  margin-left: 30px;
+ }
+
+.button-cart {
+  margin-left: 250px;
+}
+
+/* /////////////////////////////////////////// */
+
+/* KONFIRMASI */
+
+/* .btn-checkout {
+  margin-right: 130px;
+} */
+
+/* /////////////////////////////////////////// */
+
+/* Login */
+
+.container-backgroundlogin  {
+  width: 450px;
+  margin-top: 10px;
+  
+}
+
+/* Signup */
+
+.signup-btn {
+  color: white;
+  margin-top: 8px;
+  font-size: 14px;
 }
 
 .container-backgroundsignup {
   width: 600px;
-  height: auto;
-  background-color: #FFF3FF;
-  margin: auto;
-  margin-bottom: 80px;
+}
+
+.container-backgroundlogin form, .container-backgroundsignup form{
+  font-size: 12px;
+ }
+ 
+ .container-backgroundlogin label, .container-backgroundsignup label{
+   font-size: 14px;
+ }
+ 
+ .container-backgroundlogin input,
+ .container-backgroundsignup input,
+ .container-backgroundsignup select {
+   font-size: 13px;
+ }
+ 
+ .container-backgroundlogin .login-btn, .container-backgroundsignup .login-btn {
+   font-size: 15px;
+   color: white;
+ }
+
+ /* /////////////////////////////////////////// */
+
+ /* OPSI */
+ .container-backgroundopsi {
+  width: 550px;
+  height: 400px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+ }
+
+ .opsi h4{
+  margin-top: 140px;
+  }
+
+  /* .opsi1 {
+    margin-left: 260px;
+  } */
+
+/* /////////////////////////////////////////// */
+
+
+/* Address */
+
+  .container-backgroundaddress {
+    width: 560px;
+  }
+
+  /* konfirmasi */
+
+  .konfirmasi-card {
+    margin-top: 15px;
+    width: 430px;
+  }
+
+}
+
+
+
+
+@media (min-width: 992px) { 
+
+  /* NAVBAR */
+  .navbar {
+    height: 55px;
+  }
+
+  .navbar-brand {
+    margin-left: -17px !important;
+  }
+
+  .nav-link {
+    font-size : 17px;
+   } 
+
+  /* .navlink-left {
+    width: 200px;
+  } */
+
+   /* NAVLINK*/
+
+  .kategori {
+    margin-left: 215px;
+    
+  }
+
+  .category {
+    margin-left: 25px;
+  }
+  .category-women {
+  margin-left : 23px;
+  margin-right: 230px;
+  }
+
+  
+  .cart {
+    margin-right: -16px;
+    
+  }
+
+  .cart-hide {
+    display: inline;
+  }
+
+  .akun {
+   
+    margin-top: 18px;
+    margin-right: -25px;
+  }
+
+  /* /////////////////////////////////////////// */
+
+  /* CAROUSEL */
+
+  .carousel {
+    height: 450px;
+  }
+
+  .carousel h1, h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .carousel h1 {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .satu img {
+    margin-left: 108px;
+    height: 100px;
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .dua img {
+    margin-left: 60px;
+    height: 350px;
+    
+  }
+
+  .hot-product .figure p {
+  
+    font-size: 17px;
+  }
+  
+  /* /////////////////////////////////////////// */
+
+  /* GALERY */
+  .gallery-container {
+    width: 1200px;
+  }
+
+  /* /////////////////////////////////////////// */
+
+  /* CATEGORY */
+
+  .figure-category img {
+    width: 600px;
+    margin-left: 0;
+  }
+
+  .judul-category h3 {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .judul-category hr {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .figure-img span {
+    display: block;
+    width: 451px;
+    height: 180px;
+    line-height : 184px;
+    font-size: 30px;
+    margin-left: 0px;
+    
+  }
+
+/* /////////////////////////////////////////// */
+
+/* Single Product */
+
+/* BREADCRUMB */
+
+.breadcrumb {
+  margin-top: 50px;
+}
+
+
+.product {
+  width: 360px;
+  height: 420px;
+}
+
+.detail-product {
+  margin-top: -10px;
+  margin-left: -20px !important;
+}
+
+.detail-product h3 {
+  font-size: 25px;
+}
+
+.price {
+  font-size: 20px;
+  margin-left: -1px;
+}
+
+.label-size {
+  font-size: 20px;
+}
+
+.form-size {
+  margin-top: 22px;
+  margin-left: -20px;
+}
+
+.btn-product {
+  margin-top: -10px;
+}
+
+.ket-product p {
+  font-size: 15px;
+  margin-left: -1px;
+}
+
+.ket-product hr  {
+  width: 395px;
   
 }
 
-
-
-.form-login button {
-  font-size: 13px;
+.designed-by h5 {
+  font-size: 20px;
 }
 
-.form-login, .form-check label {
- font-size: 12px;
+.designed-by img {
+  width: 70px;
+  height: 70px;
+}
+
+.designed-by h4 {
+margin-left: 12px;
+font-size: 20px;
+margin-top: 0.2px;
+}
+
+.designed-by p{
+margin-left: 12px;
+font-size: 17px;
+}
+
+.desc-rev a {
+  font-size: 20px;
+}
+
+.description-review p {
+  font-size:  18px;
+}
+
+.product-review img {
+  width: 60px;
+  height: 60px;
+}
+
+.product-review h5, .product-review p{
+  margin-left: 18px;
+}
+
+.product-review h5 {
+  margin-top: 5px;
+}
+
+.product-description p {
+ font-size: 16px;
+}
+.similar-product {
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+.similar-product img {
+  height: 230px;
+  width: 190px;
+}
+
+.similar-product h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.similar-product hr {
+  width: 188px;
+  margin-top: 4px;
+  margin-bottom: 27px;
+}
+
+.similar-product h5 {
+  font-size: 20px;
+}
+
+.similar-product p {
+  font-size: 15px;
+}
+
+/* /////////////////////////////////////////// */
+
+/* CONTAINER BACKGROUND */
+.container-background {
+  width: 470px;
+  
+}
+
+/* CART */
+
+.cart-p {
+  margin-left: 30px;
+ }
+
+.button-cart {
+  margin-left: 250px;
+}
+
+/* /////////////////////////////////////////// */
+
+/* KONFIRMASI */
+.konfirmasi-card {
+  width: 660px;
+}
+
+/* .btn-checkout {
+  margin-right: 335px;
+} */
+
+/* /////////////////////////////////////////// */
+
+/* Login */
+
+.container-backgroundlogin  {
+  width: 550px;
+  margin-top: 10px;
+  
+}
+
+/* Signup */
+
+.container-backgroundsignup {
+  width: 600px;
+}
+
+.container-backgroundlogin form, .container-backgroundsignup form{
+  font-size: 12px;
+ }
+ 
+ .container-backgroundlogin label, .container-backgroundsignup label{
+   font-size: 14px;
+ }
+ 
+ .container-backgroundlogin input,
+ .container-backgroundsignup input,
+ .container-backgroundsignup select {
+   font-size: 13px;
+ }
+ 
+ .container-backgroundlogin .login-btn, .container-backgroundsignup .login-btn {
+   font-size: 15px;
+   color: white;
+ }
+
+ /* /////////////////////////////////////////// */
+
+ /* OPSI */
+ .container-backgroundopsi {
+  width: 700px;
+  height: 400px;
+  margin-top: 5px;
+  margin-bottom: 60px;
+ }
+ 
+
+  .opsi h4{
+  margin-top: 140px;
+  }
+
+/* /////////////////////////////////////////// */
+
+
+/* Address */
+
+  .container-backgroundaddress {
+    width: 560px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .kategori {
+    margin-left: 290px;
+    
+  }
+
+  .category {
+    margin-left: 30px;
+  }
+
+
+  .category-women {
+  margin-left : 50px;
+  margin-right: 180px;
+  }
+
+  .cart {
+    margin-left: 100px;
+    
+  }
+
+  .akun {
+    margin-top: 18px;
+    margin-right: -50px;
+  }
+
+  /* CATEGORY */
+
+  .figure-img span {
+    display: block;
+    width: 541px;
+    height: 216px;
+    line-height : 216px;
+    font-size: 30px;
+    margin-left: 0px;
+  }
+
+/* Product */
+
+
+
+  /* Single Product */
+
+.product {
+  width: 410px;
+  height: 430px;
+}
+
+.form-size {
+  margin-left: -40px;
+}
+.ket-product hr {
+  width: 395px;
+}
+
+.designed-by img {
+  margin-top: .1px;
+}
+
+.designed-by h4, .designed-by p {
+  margin-top: 8px;
+  margin-left: -3px;
+}
+
+.product-review img {
+  width: 60px;
+  height: 60px;
+}
+
+.product-review h5, .product-review p{
+  margin-left: 10px;
+}
+
+.product-review h5 {
+  margin-top: 5px;
 }
 
 
+/* KONFIRMASI */
+.konfirmasi-card {
+  width: 860px;
+}
 
-/* Navbar */
-
-
-/* Navlink*/
-
-/* Carousel */
-
-/* Hot-Product */
-
-/* Gallery */
-
-/* Designer */
-
-/* Footer */
+ }
