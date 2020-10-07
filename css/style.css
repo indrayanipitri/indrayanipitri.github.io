@@ -4,7 +4,7 @@
 }
 
 /* nav */
-.navbar {
+.navbar { 
    background-color: rgb(59, 59, 59);
    position: relative;
 
@@ -21,23 +21,23 @@
 .jumbotron {
     background-image: url(../img/1.png);
     background-size: cover;
-    height: 550px;
+    height: 400px;
     position: relative;
     
 }
 
 
 .jumbotron img {
-    margin-top: 100px;
-    width: 200px;
+    margin-top: 50px;
+    width: 110px;
 }
 
 
 .jumbotron h3 {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-family: viga;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .jumbotron hr{
@@ -48,8 +48,7 @@
 
 .jumbotron p {
     color: white;
-    font-size: 25px;
-   
+    font-size: 20px
 }
 
 
@@ -57,7 +56,7 @@
 
 .container-about {
     margin: auto;
-    width: 400px;
+    width: 300px;
 }
 
 .about h2, .skill h2, .project h2, .contact h2 {
@@ -73,7 +72,7 @@
 
 /* Skill */
 .container-skill {
-    width: 400px;
+    width: 300px;
     margin: auto;
 }
 
@@ -116,11 +115,11 @@
 .project {
     background-color: rgb(241, 242, 245);
     margin-top: 40px;
-    height: 450px;
+    height: 400px;
 }
 
 .container-project {
-    width: 350px;
+    width: 300px;
     margin: auto;
 }
 
@@ -190,13 +189,14 @@ footer {
     background-color: rgb(59, 59, 59);
   position: absolute;
   width: 100%;
-  height: 100px;
-  padding-top: 35px;
+  height: 70px;
+  padding-top: 15px;
 }
 
 footer p {
     padding-top: 10px;
     color: white;
+    font-size: 12px;
 }
 
 
@@ -218,29 +218,56 @@ footer p {
         
     }
 
-    /* about */
-    .container-about {
-        width: 500px;
-    }
+    
+/* jumbotron */
+.jumbotron {
+    height: 550px; 
+}
 
-    .container-skill {
-        width: 400px;
-        
-    }
-
-   
-
+.jumbotron img {
+    margin-top: 100px; 
+    width: 200px;
 }
 
 
+.jumbotron h3 {
+    font-size: 40px;
+    margin-top: 30px; 
+}
 
 
+.jumbotron p {
+    font-size: 25px; 
+}
 
 
+/* about */
+.container-about {
+    width: 500px;
+}
+
+.container-skill {
+    width: 400px;
+}
 
 
+/* Skill */
+.container-skill {
+    width: 400px; 
+}
 
+   /* footer */
+footer {
+    height: 100px;
+    padding-top: 35px;
+  }
+  
+  footer p {
+      font-size: 16px;
+  }
+  
 
+}
 
 
 

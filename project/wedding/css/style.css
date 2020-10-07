@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-
+ 
 
 /*Navbar*/
 .navbar {
@@ -23,6 +23,7 @@
   height: 400px;
   position: relative;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .jumbotron::after {
@@ -102,15 +103,13 @@
 
 /* card */
 .container-card {
-  width : 300px;
+  width : 310px;
   margin: auto;
   z-index: 2;
   position: relative;
   
-  
-  
-
 }
+
 
 .card {
   border: 1px solid #aaa;
@@ -121,10 +120,9 @@
   height: 340px;
   width: 300px;
   margin-top: 30px;
-  
-  
-
 }
+
+
 
 .card img {
   height: 230px;
@@ -134,7 +132,6 @@
 .card .card-body  {
   text-align: center;
   font-size: 12px;
-  
 }
 
 .card-body h3 {
@@ -148,7 +145,7 @@
 
 /* gallery */
 .gallery {
-  margin: auto 40px;
+  margin: auto ;
   font-family: Helvetica;
 }
 
@@ -168,7 +165,7 @@
 
 
 .container-gallery {
-  width: 350px;
+  width: 300px;
   margin: auto;
   margin-bottom: 0;
   
@@ -197,8 +194,8 @@
 
 .image-gallery a {
   
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,8 +216,8 @@
 
 .img-1 {
   grid-area: img-1;
-  min-height: 240px;
-  min-width: 240px;
+  min-height: 200px;
+  min-width: 200px;
   background-image: url(../img/gallery-/1.png);
 }
 
@@ -241,7 +238,7 @@
 
 .img-5 {
   grid-area: img-5;
-  min-height: 240px;
+  min-height: 200px;
   background-image: url("../img/gallery-/5.jpg");
 }
 
@@ -252,8 +249,8 @@
 
 .img-7 {
   grid-area: img-7;
-  min-height: 240px;
-  min-width: 240px;
+  min-height: 200px;
+  min-width: 200px;
   background-image: url("../img/gallery-/7.png");
 }
 
@@ -264,14 +261,14 @@
 
 .img-9 {
   grid-area: img-9;
-  min-height: 240px;
+  min-height: 200px;
   background-image: url("../img/gallery-/9.jpg");
 }
 
 .img-10 {
   grid-area: img-10;
-  min-height: 240px;
-  min-width: 240px;
+  min-height: 200px;
+  min-width: 200px;
   background-image: url("../img/gallery-/10.png");
 }
 
@@ -294,7 +291,7 @@
 
 .form-val {
   background-image: url(../img/form/33.jpg);
-  height: 900px;
+  height: 970px;
   background-size: cover;
   background-position-y: -50px ;
   position: relative;
@@ -349,7 +346,6 @@
 .container-form h3 {
   margin-top: 40px;
   font-size: 19px;
-  
 }
 
 .fa-pencil-alt {
@@ -360,8 +356,8 @@
 }
 
 .khususform {
-  margin-top: 40px;
-  box-shadow: -1px 1px 60px 10px black;
+  margin-top: 20px;
+  /* box-shadow: -1px 1px 60px 10px black; */
   background: rgba(0, 0, 0, 0.4);
   
 }
@@ -377,20 +373,19 @@
   margin-top: 20px;
   color: white;
   font-size: 14px;
-  
 }
 
 .form-control {
   background: transparent;
   border-radius: 0px;
   border: 0px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(124, 122, 122);
   font-size: 16px;
   margin-top: 10px;
   height: 35px;
   color: white;
   margin-left: 0px;
-  width: 400px;
+  width: 300px;
 
 }
 
@@ -411,30 +406,197 @@ footer {
   background-color: rgb(247, 252, 255);
   position: absolute;
   width: 100%;
-  height: 100px;
-  padding-top: 35px;
-  
-  
+  height: 80px;
+  padding-top: 25px;
 }
 
 footer p {
-  font-size: 15px;
+  font-size: 13px;
   color: rgb(99, 91, 91);
  
 }
 
+@media (min-width: 540px) { 
+
+  /* Gallery */
+
+  .container-gallery {
+    width: 400px;
+  }
+  
+  .image-gallery a {
+    
+    width: 130px;
+    height: 130px;
+  }
+  
+  .img-1 {
+    min-height: 264px;
+    min-width: 264px;
+  }
+  
+  .img-5 {
+    min-height: 264px;
+  }
+  
+  .img-7 {
+    min-height: 264px;
+    min-width: 264px;
+  }
+  
+  .img-9 {
+    min-height: 264px;
+  }
+  
+  .img-10 {
+    min-height: 264px;
+    min-width: 264px;
+  }
+  
+  /* Form */
+
+  .form-val {
+    height: 900px;
+  }
+
+  .form-control {
+    width: 430px;
+}
+
+}
+
+
+@media (min-width: 768px) { 
+
+/* parallex */
+.parallax {
+  min-height: 420px;
+ 
+}
+
+/* card */
+.container-card {
+  width : 750px;
+  margin: 50px auto;
+  display: flex;
+
+}
+
+.container-card h3 {
+ font-size: 12px;
+
+}
+
+.container-card p {
+  font-size: 10px;
+ 
+ }
+
+.card {
+  margin: 12px;
+  margin-top: 60px;
+  height: 300px;
+  
+
+}
+
+.card img {
+  height: 220px;
+ 
+}
+
+/* Gallery */
+
+.container-gallery {
+  width: 700px;
+  margin:  auto;
+  margin-bottom: 60px;
+  
+}
+
+.image-gallery {
+  width: 700px;
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1px;
+  grid-template-areas: 
+              'img-1 img-1 img-2 img-3 img-4 img-5'
+              'img-1 img-1 img-6 img-7 img-7 img-5'
+              'img-9 img-10 img-10 img-7 img-7 img-8'
+              'img-9 img-10 img-10 img-11 img-12 img-13'
+              ;
+}
+
+.image-gallery a {
+  
+  width: 120px;
+  height: 120px;
+ 
+}
+
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 240px;
+  min-width: 240px;
+  background-image: url(../img/gallery-/1.png);
+}
+
+
+.img-5 {
+  grid-area: img-5;
+  min-height:  240px;
+  background-image: url("../img/gallery-/5.jpg");
+}
+
+
+.img-7 {
+  grid-area: img-7;
+  min-height: 240px;
+  min-width: 240px;
+  background-image: url("../img/gallery-/7.png");
+}
 
 
 
+.img-9 {
+  grid-area: img-9;
+  min-height:  240px;
+  background-image: url("../img/gallery-/9.jpg");
+}
 
+.img-10 {
+  grid-area: img-10;
+  min-height: 240px;
+  min-width: 215px;
+  background-image: url("../img/gallery-/10.png");
+}
+
+/* Form */
+
+.form-val {
+  height: 470px;
+}
+
+.form-control {
+width: 250px;
+}
+
+.container-form h3 {
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+
+}
 
 /*Desktop Version*/
 @media (min-width: 992px) { 
 
-  /* Container */
-.container {
-  width: 1100px;
-}
 
 /* navbar */
 .navbar-brand, .nav-link {
@@ -473,7 +635,7 @@ footer p {
 
 /* about */
 .container-about {
-  width: 1010px;
+  width: 900px;
   margin: auto;
   font-family: helvetica;
 }
@@ -490,7 +652,7 @@ footer p {
 
 /* card */
 .container-card {
-  width : 1050px;
+  width : 950px;
   margin: 50px auto;
   display: flex;
  
@@ -582,30 +744,27 @@ footer p {
 
 
 /* form */
+
+
 .form-val {
   height: 500px;
-
+ 
 }
 
 
-.container-form {
-  width: 1020px;
-  margin: auto;
-  
-
-}
 
 .container-form h1 {
   margin-top: 100px;
   font-size: 35px;
 }
 
+
 .container-form .kiri hr {
   width: 380px;
 }
 
 .container-form p {
-  font-size: 17px;
+  font-size: 15px;
   text-align: left;
   
 }
@@ -614,6 +773,14 @@ footer p {
 .container-form h3 {
   font-size: 22px;
   
+}
+
+.khususform {
+  margin-top: 50px;
+}
+
+.container-form .khususform hr {
+  width: 350px;
 }
 
 .fa-pencil-alt {
@@ -648,5 +815,227 @@ footer p {
   font-size: 20px;
  
 }
+
+}
+
+@media (min-width: 1200px) { 
+  /* Container */
+  /* .container {
+    width: 1100px;
+  }
+   */
+  /* navbar */
+  .navbar-brand, .nav-link {
+    color: white !important;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 25px;
+  }
+  
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid rgb(113, 121, 129);  /*warna diganti*/
+    width: 50%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -5px;
+  }
+  
+  
+  /* jumbotron */
+  .jumbotron {
+    margin-top: -75px;
+    height: 560px;
+  }
+  
+  .jumbotron .display-4 {
+    margin-top: 60px;
+    font-family: Helvetica;
+    font-size: 75px;
+  }
+  
+  /* about */
+  .container-about {
+    width: 1010px;
+    margin: auto;
+    font-family: helvetica;
+  }
+  
+  
+  /* parallex */
+  .parallax {
+    
+    background: transparent;
+    background-size: cover;
+    min-height: 500px;
+   
+  }
+  
+  /* card */
+  .container-card {
+    width : 1050px;
+    margin: 50px auto;
+    display: flex;
+   
+    
+  
+  }
+  
+  .card {
+    margin: 30px;
+    margin-top: 60px;
+    height: 380px;
+    
+  
+  }
+  
+  .card img {
+    height: 260px;
+   
+  }
+  
+  
+  /* gallery */
+  .container-gallery {
+    width: 900px;
+    margin:  auto;
+    margin-bottom: 80px;
+    
+  }
+  
+  .image-gallery {
+    width: 900px;
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    grid-template-areas: 
+                'img-1 img-1 img-2 img-3 img-4 img-5'
+                'img-1 img-1 img-6 img-7 img-7 img-5'
+                'img-9 img-10 img-10 img-7 img-7 img-8'
+                'img-9 img-10 img-10 img-11 img-12 img-13'
+                ;
+  }
+  
+  .image-gallery a {
+    
+    width: 150px;
+    height: 150px;
+   
+  }
+  
+  
+  .img-1 {
+    grid-area: img-1;
+    min-height: 300px;
+    min-width: 300px;
+    background-image: url(../img/gallery-/1.png);
+  }
+  
+  
+  .img-5 {
+    grid-area: img-5;
+    min-height:  300px;
+    background-image: url("../img/gallery-/5.jpg");
+  }
+  
+  
+  .img-7 {
+    grid-area: img-7;
+    min-height: 300px;
+    min-width: 300px;
+    background-image: url("../img/gallery-/7.png");
+  }
+  
+  
+  
+  .img-9 {
+    grid-area: img-9;
+    min-height:  300px;
+    background-image: url("../img/gallery-/9.jpg");
+  }
+  
+  .img-10 {
+    grid-area: img-10;
+    min-height: 300px;
+    min-width: 292px;
+    background-image: url("../img/gallery-/10.png");
+  }
+  
+  
+  
+  /* form */
+  .form-val {
+    height: 500px;
+  
+  }
+  
+  
+  .container-form {
+    width: 1020px;
+    margin: auto;
+    
+  
+  }
+  
+  .container-form h1 {
+    margin-top: 100px;
+    font-size: 35px;
+  }
+  
+  .container-form .kiri hr {
+    width: 380px;
+  }
+  
+  .container-form p {
+    font-size: 17px;
+    text-align: left;
+    
+  }
+  
+  
+  .container-form h3 {
+    font-size: 22px;
+    
+  }
+  
+  .fa-pencil-alt {
+    font-size: 24px;
+    margin-top: 37px;
+  }
+  
+  
+  .label {
+    font-size: 15px;
+    
+  }
+  
+  
+  .btn-info {
+    margin-top: 30px;
+    font-size: 17px;
+    width: 90px;
+    margin-left: 84px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* footer */
+  footer {
+    height: 120px;
+    padding-top: 40px;
+    
+  }
+  
+  footer p {
+    font-size: 20px;
+   
+  }
+  
 
 }
