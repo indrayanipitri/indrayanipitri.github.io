@@ -1045,6 +1045,9 @@ footer p {
 
 /* CART */
 
+.container-cart {
+  width: 700px;
+}
 .cart-p {
   margin-left: 30px;
  }
